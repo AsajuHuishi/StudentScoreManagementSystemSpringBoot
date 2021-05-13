@@ -17,7 +17,6 @@
 
 <font face="楷体" size="+1" color="#000033">本文基于**SpringBoot+MyBatisPlus+Redis+Thymeleaf+Echarts**实现一个简单的学生成绩管理系统。它在上一[Spring+SpringMVC+Mybatis版本]((https://blog.csdn.net/qq_36937684/article/details/115924220))基础上使用了SpringBoot框架，优化了相关功能，增加了Echarts可视化功能。
 
-<font face="楷体" size="+1" color="#000033">完整代码见[github](https://github.com/AsajuHuishi/StudentScoreManagementSystem_SSM)
 
 # 任务
 <center><img src="https://img-blog.csdnimg.cn/20200923171232277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTM3Njg0,size_16,color_FFFFFF,t_70#pic_center"/></center>

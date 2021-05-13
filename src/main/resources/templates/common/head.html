@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="header">
+    <base th:href="${#request.getContextPath()}+'/'">
+
+    <link type="text/css" rel="stylesheet" href="static/css/style.css" >
+    <!-- 引入 echarts.js -->
+    <script th:src="${#request.getContextPath()}+'/static/script/echarts.common.js'"></script>
+    <script src="static/script/jquery-1.7.2.js"></script>
+</body>
+</html>

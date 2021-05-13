@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+
+	<!--静态包含base标签 css样式 jquery文件-->
+	<div th:include="/common/head.html::header"></div>
+	<base th:href="${#request.getContextPath()}+'/'">
+</head>
+<body>
+	<div id="login_header">
+		<img class="logo_img" alt="" src="static/img/logo2.png" >
+	</div>
+
+		<div class="login_banner">
+
+			<div id="l_content">
+				<span class="login_word">欢迎登录</span>
+			</div>
+
+			<div id="content">
+				<div class="login_form">
+					<div class="login_box">
+						<div class="tit">
+							<h1>系统管理员</h1>
+							<a th:href="@{/user/regist.html}">立即注册</a>
+						</div>
+						<div class="msg_cont">
+							<b></b>
+							<!--信息提示：如果之前没有错误信息(msg==null)，就显示“请输入用户名和密码”；如果有错误信息，提示错误信息msg-->
+							<!--<span class="errorMsg">请输入用户名和密码</span>-->
+							<span class="errorMsg" th:if="${msg==null}" th:text="请输入用户名和密码"></span>
+							<span class="errorMsg" th:unless="${msg==null}" th:text="${msg}"></span>
+						</div>
+						<div class="form">
+							<form th:action="@{/user/login.action}" method="post">
+								<label>用户名称：</label>
+								<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" th:value="${username}"/>
+								<br />
+								<br />
+								<label>用户密码：</label>
+								<input class="itxt" type="password" placeholder="请输入密码" autocomplete="off" tabindex="1" name="password" />
+								<br />
+								<br />
+								<input type="submit" value="登录" id="sub_btn" />
+								<!--隐藏域-->
+								<input type="hidden" name="action" value="login"/>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--引入页脚内容-->
+	<div th:include="/common/bottom::bottomer"></div>
+</body>
+</html>

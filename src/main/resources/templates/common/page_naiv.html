@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="page_naver">
+<base th:href="${#request.getContextPath()}+'/'">
+<div id="page_nav">
+    <!--大于首页才显示 首页和上一页-->
+    <!--/*@thymesVar id="page" type="com.baomidou.mybatisplus.extension.plugins.pagination.Page"*/-->
+    <a th:if="${page.getCurrent() > 1}" th:href="@{${curr_url}+'?pageNo=1'}">首页</a>
+    <a th:if="${page.getCurrent() > 1}" th:href="@{${curr_url}+'?pageNo='+${page.getCurrent()-1}}">上一页</a>
+
+    <!--页码输出开始 5 个-->
+    <!--情况一 不足5页 输出1-总页码-->
+    <!--				${requestScope.page.pageTotal}-->
+<!--    <c:choose>-->
+    <span th:if="${page.getPages()<=5}">
+        <!--遍历所有页码-->
+        <span th:each="i:${#numbers.sequence(1, page.getPages())}">
+            <!--如果等于当前页，显示【页数】-->
+            <span th:if="${page.getCurrent()} == ${i}" th:utext="${'【'+page.getCurrent()+'】'}"></span>
+            <!--如果不等于当前页，显示跳转链接-->
+            <a th:if="${page.getCurrent()} != ${i}" th:href="@{${curr_url}+'?pageNo='+${i}}" th:text="${i}"></a>
+        </span>
+    </span>
+<!--        <c:when test="${requestScope.page.pageTotal<=5}">-->
+<!--            <c:forEach begin="1" end="${requestScope.page.pageTotal}" var="i">-->
+<!--                <%&#45;&#45;当前页不可点击&#45;&#45;%>-->
+<!--                <c:if test="${requestScope.page.pageNo == i}">-->
+<!--                    【${requestScope.page.pageNo}】-->
+<!--                </c:if>-->
+<!--                <c:if test="${requestScope.page.pageNo != i}">-->
+<!--                    <a href="${requestScope.page.url}?pageNo=${i}">${i}</a>-->
+<!--                </c:if>-->
+<!--            </c:forEach>-->
+<!--        </c:when>-->
+
+    <!--情况二 总页码大于5页-->
+    <span th:if="${page.getPages()} > 5">
+        <!--1.页码小于4 输出1到5页-->
+        <span th:if="${page.getPages()} < 4">
+            <span th:each="i:${#numbers.sequence(1,5)}">
+                <!--如果等于当前页，显示【页数】-->
+                <span th:if="${page.getCurrent()} == ${i}" th:utext="${'【'+page.getCurrent()+'】'}"></span>
+                <!--如果不等于当前页，显示跳转链接-->
+                <a th:if="${page.getCurrent()} != ${i}" th:href="@{${curr_url}+'?pageNo='+${i}}"></a>
+            </span>
+        </span>
+        <!--2.页码大于total-3 输出total-4到total页-->
+        <span th:if="${page.getCurrent()} > ${page.getPages() - 3}">
+            <span th:each="i:${#numbers.sequence(${page.getPages()-4},${page.getPages()})}">
+                <!--如果等于当前页，显示【页数】-->
+                <span th:if="${page.getCurrent()} == ${i}" th:utext="${'【'+page.getCurrent()+'】'}"></span>
+                <!--如果不等于当前页，显示跳转链接-->
+                <a th:if="${page.getCurrent()} != ${i}" th:href="@{${curr_url}+'?pageNo='+${i}}"></a>
+            </span>
+        </span>
+        <!--3.其他情况 输出i-2到i+2页-->
+        <span th:if="${page.getCurrent()} >=4 and ${page.getCurrent()} <= ${page.getPages()-3}">
+            <span th:each="i:${#numbers.sequence(${page.getPages()-2},${page.getPages()+2})}">
+                <!--如果等于当前页，显示【页数】-->
+                <span th:if="${page.getCurrent()} == ${i}" th:utext="${'【'+page.getCurrent()+'】'}"></span>
+                <!--如果不等于当前页，显示跳转链接-->
+                <a th:if="${page.getCurrent()} != ${i}" th:href="@{${curr_url}+'?pageNo='+${i}}"></a>
+            </span>
+        </span>
+    </span>
+
+    <!--如果是最后一页 不显示末页和下一页-->
+    <span th:if="${page.getCurrent()} < ${page.getPages()}">
+        <a th:href="@{${curr_url}+'?pageNo='+${page.getCurrent()+1}}" th:text="下一页"></a>
+        <a th:href="@{${curr_url}+'?pageNo='+${page.getPages()}}" th:text="末页"></a>
+    </span>
+<!--    <c:if test="${requestScope.page.pageNo < requestScope.page.pageTotal}">-->
+<!--        <a href="${requestScope.page.url}?pageNo=${requestScope.page.pageNo+1}">下一页</a>-->
+<!--        <a href="${requestScope.page.url}?pageNo=${requestScope.page.pageTotal}">末页</a>-->
+<!--    </c:if>-->
+
+
+    <span th:text="'共'+${page.getPages()}+'页,'+${page.getTotal()}+'条记录'"></span>
+    <span>&nbsp;到第<input th:value="${page.getCurrent()}" name="pn" id="pn_input">页&nbsp;</span>
+    <input type="button" value="确定" id="searchPageBtn">
+
+
+    <!--    共${requestScope.page.pageTotal}页，${requestScope.page.pageTotalCount}条记录 到第<input value="${requestScope.page.pageNo}" name="pn" id="pn_input"/>页-->
+    <!--    <input type="button" value="确定" id="searchPageBtn">-->
+
+
+<!--        &lt;!&ndash;遍历所有页码&ndash;&gt;-->
+<!--        <span th:each="i:${#numbers.sequence(1,${page.getPages()})}">-->
+<!--            &lt;!&ndash;如果等于当前页，显示【页数】&ndash;&gt;-->
+<!--            <span th:if="${page.getCurrent() == ${i}}" th:utext="${'【'+page.getCurrent()+'】'}"></span>-->
+<!--            &lt;!&ndash;如果不等于当前页，显示跳转链接&ndash;&gt;-->
+<!--            <a th:if="${page.getCurrent() != ${i}}" th:href="@{url+'?pageNo='+${i}}"></a>-->
+<!--        </span>-->
+<!--    </span>-->
+
+<!--        <%&#45;&#45;情况二 总页码大于5页 &#45;&#45;%>-->
+<!--        <c:when test="${requestScope.page.pageTotal>5}">-->
+<!--            <%&#45;&#45;1.页码小于4 输出1到5页&#45;&#45;%>-->
+<!--            <c:choose>-->
+<!--                <c:when test="${requestScope.page.pageNo < 4}">-->
+<!--                    <c:forEach begin="1" end="5" var="i">-->
+<!--                        <%&#45;&#45;当前页不可点击&#45;&#45;%>-->
+<!--                        <c:if test="${requestScope.page.pageNo == i}">-->
+<!--                            【${requestScope.page.pageNo}】-->
+<!--                        </c:if>-->
+<!--                        <c:if test="${requestScope.page.pageNo != i}">-->
+<!--                            <a href="${requestScope.page.url}?pageNo=${i}">${i}</a>-->
+<!--                        </c:if>-->
+<!--                    </c:forEach>-->
+<!--                </c:when>-->
+<!--                <%&#45;&#45;2.页码大于total-3 输出total-4到total页&#45;&#45;%>-->
+<!--                <c:when test="${requestScope.page.pageNo > requestScope.page.pageTotal-3}">-->
+<!--                    <c:forEach begin="${requestScope.page.pageTotal-4}" end="${requestScope.page.pageTotal}" var="i">-->
+<!--                        <%&#45;&#45;当前页不可点击&#45;&#45;%>-->
+<!--                        <c:if test="${requestScope.page.pageNo == i}">-->
+<!--                            【${requestScope.page.pageNo}】-->
+<!--                        </c:if>-->
+<!--                        <c:if test="${requestScope.page.pageNo != i}">-->
+<!--                            <a href="${requestScope.page.url}?pageNo=${i}">${i}</a>-->
+<!--                        </c:if>-->
+<!--                    </c:forEach>-->
+<!--                </c:when>-->
+<!--                <%&#45;&#45;3.其他情况 输出i-2到i+2页-%>&#45;&#45;%>-->
+<!--                <c:otherwise>-->
+<!--                    <c:forEach begin="${requestScope.page.pageNo-2}" end="${requestScope.page.pageNo+2}" var="i">-->
+<!--                        <%&#45;&#45;当前页不可点击&#45;&#45;%>-->
+<!--                        <c:if test="${requestScope.page.pageNo == i}">-->
+<!--                            【${requestScope.page.pageNo}】-->
+<!--                        </c:if>-->
+<!--                        <c:if test="${requestScope.page.pageNo != i}">-->
+<!--                            <a href="${requestScope.page.url}?pageNo=${i}">${i}</a>-->
+<!--                        </c:if>-->
+<!--                    </c:forEach>-->
+<!--                </c:otherwise>-->
+<!--            </c:choose>-->
+<!--        </c:when>-->
+<!--    </c:choose>-->
+<!--    <%&#45;&#45;			【${requestScope.page.pageNo}】-->
+<!--    <%&#45;&#45;			<a href="#">5</a>&#45;&#45;%>-->
+<!--    <%&#45;&#45;页码输出结束&#45;&#45;%>-->
+<!--    &lt;!&ndash;如果是最后一页 不显示末页和下一页&ndash;&gt;-->
+<!--    <c:if test="${requestScope.page.pageNo < requestScope.page.pageTotal}">-->
+<!--        <a href="${requestScope.page.url}?pageNo=${requestScope.page.pageNo+1}">下一页</a>-->
+<!--        <a href="${requestScope.page.url}?pageNo=${requestScope.page.pageTotal}">末页</a>-->
+<!--    </c:if>-->
+
+<!--    共${requestScope.page.pageTotal}页，${requestScope.page.pageTotalCount}条记录 到第<input value="${requestScope.page.pageNo}" name="pn" id="pn_input"/>页-->
+<!--    <input type="button" value="确定" id="searchPageBtn">-->
+
+</div>
+</html>

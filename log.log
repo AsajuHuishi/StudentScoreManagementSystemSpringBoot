@@ -1,0 +1,647 @@
+2021-05-12 18:13:55.190  INFO 9364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:13:55.611  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:13:55.627  INFO 9364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:13:55.627  INFO 9364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:13:55.765  INFO 9364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:13:55.765  INFO 9364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1361 ms
+2021-05-12 18:13:55.890  INFO 9364 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:13:56.094  INFO 9364 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:13:57.609  INFO 9364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:13:57.883  INFO 9364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:13:57.928  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:13:57.937  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 4.056 seconds (JVM running for 5.704)
+2021-05-12 18:14:24.534  INFO 9364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:14:24.535  INFO 9364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:14:24.535  INFO 9364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-12 18:14:24.554  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/ass/we/can
+2021-05-12 18:14:24.556  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:24.849  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:24.850  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:24.852  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:24.852  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:41.495  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/ass/we/can
+2021-05-12 18:14:41.496  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:41.520  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:41.520  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:41.520  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:41.520  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:45.461  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/ass/we/can
+2021-05-12 18:14:45.461  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:45.486  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:45.486  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:45.486  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:45.486  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:47.760  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/login.action
+2021-05-12 18:14:47.760  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:47.763  WARN 9364 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:14:47.764  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:47.764  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:47.765  WARN 9364 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:14:52.544  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/login.action
+2021-05-12 18:14:52.544  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:52.545  WARN 9364 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:14:52.545  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:14:52.545  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:14:52.546  WARN 9364 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:15:46.585  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/ass/we/can
+2021-05-12 18:15:46.585  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:15:46.611  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:15:46.612  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:15:46.612  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:15:46.612  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:15:48.769  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /user/login.action
+2021-05-12 18:15:48.770  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:15:48.770  WARN 9364 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:15:48.771  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:15:48.771  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:15:48.772  WARN 9364 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-12 18:17:23.889  INFO 9364 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:17:23.889  INFO 9364 --- [Thread-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-05-12 18:17:23.889  INFO 9364 --- [Thread-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-05-12 18:17:23.982  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 9364 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:17:23.982  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:17:24.255  INFO 9364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:17:24.411  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:17:24.411  INFO 9364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:17:24.411  INFO 9364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:17:24.458  INFO 9364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:17:24.458  INFO 9364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2021-05-12 18:17:24.474  INFO 9364 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:17:24.552  INFO 9364 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2021-05-12 18:17:25.301  INFO 9364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:17:25.363  INFO 9364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:17:25.379  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:17:25.379  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 1.431 seconds (JVM running for 213.151)
+2021-05-12 18:17:25.379  INFO 9364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-12 18:17:27.465  INFO 9364 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:17:27.465  INFO 9364 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2021-05-12 18:17:27.465  INFO 9364 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-05-12 18:17:27.543  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 9364 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:17:27.543  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:17:27.762  INFO 9364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:17:27.903  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:17:27.903  INFO 9364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:17:27.903  INFO 9364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:17:27.950  INFO 9364 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:17:27.950  INFO 9364 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2021-05-12 18:17:27.965  INFO 9364 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:17:28.028  INFO 9364 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-05-12 18:17:28.731  INFO 9364 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:17:28.777  INFO 9364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:17:28.793  INFO 9364 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:17:28.793  INFO 9364 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 1.289 seconds (JVM running for 216.571)
+2021-05-12 18:17:28.793  INFO 9364 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-12 18:17:31.974  INFO 9364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:17:31.976  INFO 9364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:17:31.977  INFO 9364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:17:31.978  WARN 9364 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-05-12 18:17:31.979  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:31.979  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:17:32.039  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:32.039  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:17:32.042  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:32.042  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:17:32.051  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:32.052  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:17:35.887  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:17:35.887  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:17:35.895  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:17:35.898  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:17:35.944  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:17:35.945  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:17:35.995  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:36.044  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:17:36.047  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:17:36.047  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:17:41.706  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /asasada
+2021-05-12 18:17:41.708  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /asasada
+2021-05-12 18:17:41.709  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /asasada
+2021-05-12 18:17:41.709  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:17:41.727  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:17:41.730  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:19:44.290  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:19:44.313  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:19:44.323  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:19:44.337  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:19:44.338  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:19:44.338  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:19:44.353  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:19:44.354  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:19:44.354  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:21:16.959  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:21:16.967  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:21:16.973  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:21:16.991  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /echarts.min.js
+2021-05-12 18:21:16.991  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:21:16.992  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:21:16.992  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:21:16.994  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /echarts.min.js
+2021-05-12 18:21:16.994  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /echarts.min.js
+2021-05-12 18:21:16.995  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:21:16.996  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:21:16.996  INFO 9364 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:21:17.002  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:21:17.003  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:21:17.003  INFO 9364 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:21:17.006  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /echarts.min.js
+2021-05-12 18:21:17.007  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /echarts.min.js
+2021-05-12 18:21:17.007  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /echarts.min.js
+2021-05-12 18:21:17.007  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:21:17.008  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:21:17.008  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:22:50.919  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:22:50.926  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:22:50.932  INFO 9364 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:22:50.951  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:22:50.952  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:22:50.953  INFO 9364 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:22:50.954  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /echarts.min.js
+2021-05-12 18:22:50.959  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /echarts.min.js
+2021-05-12 18:22:50.959  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /echarts.min.js
+2021-05-12 18:22:50.960  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:22:50.961  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:22:50.961  INFO 9364 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:22:50.963  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:22:50.964  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:22:50.964  INFO 9364 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:22:50.967  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /echarts.min.js
+2021-05-12 18:22:50.968  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /echarts.min.js
+2021-05-12 18:22:50.968  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /echarts.min.js
+2021-05-12 18:22:50.968  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:22:50.969  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:22:50.969  INFO 9364 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:24:41.064  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:24:41.076  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:24:41.084  INFO 9364 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:24:41.099  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:24:41.100  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:24:41.100  INFO 9364 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:24:41.111  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:24:41.112  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:24:41.112  INFO 9364 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:24:53.888  INFO 18372 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 18372 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:24:53.904  INFO 18372 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:24:53.966  INFO 18372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:24:53.966  INFO 18372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:24:54.669  INFO 18372 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:24:54.982  INFO 18372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:24:54.982  INFO 18372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:24:54.982  INFO 18372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:24:55.107  INFO 18372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:24:55.107  INFO 18372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2021-05-12 18:24:55.201  INFO 18372 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:24:55.357  INFO 18372 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:24:56.895  INFO 18372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:24:57.083  INFO 18372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:24:57.161  INFO 18372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:24:57.177  INFO 18372 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.663 seconds (JVM running for 5.238)
+2021-05-12 18:25:03.776  INFO 18372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:25:03.776  INFO 18372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:25:03.777  INFO 18372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:25:03.792  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:25:03.793  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:25:04.074  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:25:04.074  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:25:04.074  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:25:04.074  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:25:06.248  INFO 18372 --- [http-nio-8080-exec-7] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:25:06.248  INFO 18372 --- [http-nio-8080-exec-7] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:25:06.256  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:25:06.259  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:25:06.298  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:25:06.298  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:25:06.335  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:25:06.352  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:25:06.381  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:25:06.381  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:25:07.499  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:25:07.507  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:25:07.515  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:25:07.533  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:25:07.534  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:25:07.535  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:25:07.551  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:25:07.552  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:25:07.552  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:26:07.897  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:26:07.906  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:26:07.914  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:26:07.933  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:26:07.934  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:26:07.934  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:26:07.946  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:26:07.947  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:26:07.948  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:26:09.208  INFO 18372 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:26:09.213  INFO 18372 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:26:09.219  INFO 18372 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:26:09.238  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:26:09.239  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:26:09.240  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:26:09.250  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:26:09.251  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:26:09.251  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:28:02.156  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:28:02.165  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:28:02.173  INFO 18372 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:28:02.187  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:28:02.188  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:28:02.189  INFO 18372 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:28:02.198  INFO 18372 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:28:02.199  INFO 18372 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:28:02.199  INFO 18372 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:28:06.199  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:28:06.204  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:28:06.211  INFO 18372 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:28:06.232  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:28:06.233  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:28:06.233  INFO 18372 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:28:06.244  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:28:06.244  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:28:06.244  INFO 18372 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:30:51.173  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:30:51.181  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:30:51.189  INFO 18372 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:30:51.208  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:30:51.210  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:30:51.210  INFO 18372 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:30:51.242  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:30:51.243  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:30:51.244  INFO 18372 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:33:47.946  INFO 11940 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 11940 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:33:47.946  INFO 11940 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:33:48.008  INFO 11940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:33:48.008  INFO 11940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:33:48.711  INFO 11940 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:33:49.039  INFO 11940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:33:49.039  INFO 11940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:33:49.039  INFO 11940 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:33:49.164  INFO 11940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:33:49.164  INFO 11940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1156 ms
+2021-05-12 18:33:49.258  INFO 11940 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:33:49.414  INFO 11940 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:33:50.920  INFO 11940 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:33:51.123  INFO 11940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:33:51.202  INFO 11940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:33:51.202  INFO 11940 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.661 seconds (JVM running for 5.06)
+2021-05-12 18:33:58.800  INFO 11940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:33:58.800  INFO 11940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:33:58.801  INFO 11940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:33:58.816  INFO 11940 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:33:58.816  INFO 11940 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:33:59.074  INFO 11940 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:33:59.074  INFO 11940 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:33:59.075  INFO 11940 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:33:59.075  INFO 11940 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:34:02.292  INFO 11940 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:34:02.293  INFO 11940 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:34:02.300  INFO 11940 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:34:02.302  INFO 11940 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:34:02.342  INFO 11940 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:34:02.342  INFO 11940 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:34:02.384  INFO 11940 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:34:02.395  INFO 11940 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:34:02.426  INFO 11940 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:34:02.427  INFO 11940 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:34:03.522  INFO 11940 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:34:03.654  INFO 11940 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:34:03.662  INFO 11940 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:34:03.677  INFO 11940 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:34:03.678  INFO 11940 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:34:03.678  INFO 11940 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:34:03.689  INFO 11940 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:34:03.690  INFO 11940 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:34:03.690  INFO 11940 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:34:27.866  INFO 11940 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:34:27.871  INFO 11940 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:34:27.879  INFO 11940 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:34:27.900  INFO 11940 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:34:27.901  INFO 11940 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:34:27.901  INFO 11940 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:34:27.934  INFO 11940 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:34:27.935  INFO 11940 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:34:27.935  INFO 11940 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:36:11.249  INFO 3976 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 3976 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:36:11.249  INFO 3976 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:36:11.327  INFO 3976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:36:11.327  INFO 3976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:36:12.014  INFO 3976 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:36:12.334  INFO 3976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:36:12.334  INFO 3976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:36:12.334  INFO 3976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:36:12.459  INFO 3976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:36:12.459  INFO 3976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1132 ms
+2021-05-12 18:36:12.553  INFO 3976 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:36:12.709  INFO 3976 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:36:14.224  INFO 3976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:36:14.412  INFO 3976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:36:14.490  INFO 3976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:36:14.506  INFO 3976 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.644 seconds (JVM running for 5.056)
+2021-05-12 18:36:18.324  INFO 3976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:36:18.324  INFO 3976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:36:18.325  INFO 3976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:36:18.340  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:36:18.341  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:36:18.597  INFO 3976 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:36:18.597  INFO 3976 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:36:18.597  INFO 3976 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:36:18.597  INFO 3976 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:36:23.436  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:36:23.437  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:36:23.445  INFO 3976 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:36:23.447  INFO 3976 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:36:23.488  INFO 3976 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:36:23.489  INFO 3976 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:36:23.527  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:36:23.546  INFO 3976 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:36:23.579  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:36:23.579  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:36:25.480  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:36:25.488  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:36:25.497  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:36:25.520  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:36:25.521  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:36:25.522  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:36:25.550  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:36:25.553  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:36:25.553  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:37:37.923  INFO 3976 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:37:37.923  INFO 3976 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:37:38.045  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:38.045  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:38.046  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:37:38.046  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:37:38.082  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:38.082  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:37:40.054  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:37:40.054  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:37:40.057  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:37:40.058  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:37:40.063  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:37:40.064  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:37:40.083  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:40.086  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:37:40.086  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:37:40.086  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:37:42.630  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:37:42.634  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:37:42.642  INFO 3976 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:37:42.656  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:42.657  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:37:42.658  INFO 3976 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:37:42.670  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:37:42.671  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:37:42.671  INFO 3976 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:38:07.333  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:38:07.352  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:38:07.355  INFO 3976 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:38:07.375  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:38:07.375  INFO 3976 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:38:07.376  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:38:07.376  INFO 3976 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:38:07.376  INFO 3976 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:38:07.376  INFO 3976 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:38:11.053  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:38:11.053  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:38:11.054  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:38:11.054  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:38:11.054  INFO 3976 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:38:11.054  INFO 3976 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:39:48.501  INFO 5800 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 5800 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:39:48.501  INFO 5800 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:39:48.563  INFO 5800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:39:48.563  INFO 5800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:39:49.317  INFO 5800 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:39:49.645  INFO 5800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:39:49.652  INFO 5800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:39:49.653  INFO 5800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:39:49.797  INFO 5800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:39:49.798  INFO 5800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2021-05-12 18:39:49.902  INFO 5800 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:39:50.063  INFO 5800 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:39:51.557  INFO 5800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:39:51.747  INFO 5800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:39:51.825  INFO 5800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:39:51.841  INFO 5800 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.737 seconds (JVM running for 5.199)
+2021-05-12 18:39:54.674  INFO 5800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:39:54.674  INFO 5800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:39:54.675  INFO 5800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:39:54.690  INFO 5800 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:39:54.691  INFO 5800 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:39:54.946  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:39:54.946  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:39:54.946  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:39:54.947  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:40:02.892  INFO 5800 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:40:02.893  INFO 5800 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:40:02.901  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:40:02.903  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:40:02.947  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:40:02.948  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:40:02.995  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:03.010  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:40:03.049  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:03.049  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:40:05.232  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:40:05.240  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:40:05.248  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:40:05.264  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:05.266  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:05.266  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:40:05.288  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:05.289  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:05.289  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:40:40.538  INFO 5800 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:40:40.539  INFO 5800 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:40:40.584  INFO 5800 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:40.584  INFO 5800 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:40:40.656  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:40.656  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:40:40.679  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:40.679  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:40:42.016  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:40:42.016  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:40:42.023  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:40:42.024  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:40:42.068  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:40:42.068  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:40:42.087  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:40:42.103  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:42.104  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:42.104  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:40:44.693  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:40:44.697  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:40:44.704  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:40:44.732  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:44.733  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:44.734  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:40:44.773  INFO 5800 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:40:44.774  INFO 5800 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:40:44.774  INFO 5800 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:44:16.087  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:44:16.096  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:44:16.104  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:44:16.128  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:44:16.129  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:44:16.130  INFO 5800 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:44:16.242  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:44:16.243  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:44:16.244  INFO 5800 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:44:36.576  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:44:36.577  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.controller.StudentController  : 主页..查找第2页
+2021-05-12 18:44:36.587  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:44:36.587  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:44:36.610  INFO 5800 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:44:36.637  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:44:36.638  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:44:36.638  INFO 5800 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:45:56.257  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:45:56.257  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:45:56.310  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:45:56.311  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:45:56.329  INFO 5800 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:45:56.336  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:45:56.338  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:45:56.338  INFO 5800 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:46:00.591  INFO 5800 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/add.html
+2021-05-12 18:46:00.594  INFO 5800 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/add.html
+2021-05-12 18:46:00.627  INFO 5800 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/add.html
+2021-05-12 18:46:00.643  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:46:00.644  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:46:00.644  INFO 5800 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:46:48.163  INFO 18864 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 18864 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:46:48.165  INFO 18864 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:46:48.238  INFO 18864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:46:48.238  INFO 18864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:46:48.950  INFO 18864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:46:49.274  INFO 18864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:46:49.281  INFO 18864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:46:49.281  INFO 18864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:46:49.404  INFO 18864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:46:49.405  INFO 18864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2021-05-12 18:46:49.498  INFO 18864 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:46:49.657  INFO 18864 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:46:51.207  INFO 18864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:46:51.414  INFO 18864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:46:51.491  INFO 18864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:46:51.498  INFO 18864 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.763 seconds (JVM running for 5.204)
+2021-05-12 18:46:51.561  INFO 18864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:46:51.561  INFO 18864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:46:51.562  INFO 18864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:46:51.579  INFO 18864 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:46:51.580  INFO 18864 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:46:51.854  INFO 18864 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:46:51.854  INFO 18864 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:46:57.348  INFO 18864 --- [http-nio-8080-exec-5] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:46:57.348  INFO 18864 --- [http-nio-8080-exec-5] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:46:57.358  INFO 18864 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:46:57.361  INFO 18864 --- [http-nio-8080-exec-4] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:46:57.403  INFO 18864 --- [http-nio-8080-exec-4] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:46:57.404  INFO 18864 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:46:57.456  INFO 18864 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:47:01.223  INFO 18864 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:47:01.233  INFO 18864 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:47:01.247  INFO 18864 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:49:26.327  INFO 4284 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 4284 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 18:49:26.327  INFO 4284 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 18:49:26.405  INFO 4284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 18:49:26.405  INFO 4284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 18:49:27.107  INFO 4284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 18:49:27.450  INFO 4284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 18:49:27.450  INFO 4284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 18:49:27.450  INFO 4284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 18:49:27.575  INFO 4284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 18:49:27.575  INFO 4284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1170 ms
+2021-05-12 18:49:27.689  INFO 4284 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 18:49:27.846  INFO 4284 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 18:49:29.363  INFO 4284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 18:49:29.568  INFO 4284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 18:49:29.648  INFO 4284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 18:49:29.657  INFO 4284 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.707 seconds (JVM running for 5.095)
+2021-05-12 18:49:34.170  INFO 4284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 18:49:34.170  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 18:49:34.171  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-12 18:49:34.187  INFO 4284 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:49:34.188  INFO 4284 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:49:34.452  INFO 4284 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:34.452  INFO 4284 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:34.452  INFO 4284 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:49:34.452  INFO 4284 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 18:49:36.490  INFO 4284 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 18:49:36.490  INFO 4284 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 18:49:36.498  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 18:49:36.500  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 18:49:36.542  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 18:49:36.543  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 18:49:36.593  INFO 4284 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:36.594  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 18:49:36.638  INFO 4284 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:36.638  INFO 4284 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:49:38.709  INFO 4284 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 18:49:38.717  INFO 4284 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 18:49:38.725  INFO 4284 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 18:49:38.738  INFO 4284 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:38.740  INFO 4284 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:38.740  INFO 4284 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:49:38.765  INFO 4284 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:38.766  INFO 4284 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:38.767  INFO 4284 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:49:58.886  INFO 4284 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:58.904  INFO 4284 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:58.907  INFO 4284 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:49:58.922  INFO 4284 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:58.923  INFO 4284 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:58.923  INFO 4284 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:49:58.926  INFO 4284 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:49:58.927  INFO 4284 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:49:58.927  INFO 4284 --- [http-nio-8080-exec-5] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:50:00.665  INFO 4284 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:50:00.666  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 18:50:00.666  INFO 4284 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:50:00.667  INFO 4284 --- [http-nio-8080-exec-4] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 18:50:00.667  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 18:50:00.667  INFO 4284 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 19:34:36.575  INFO 20748 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Starting ShizuoApplication using Java 1.8.0_65 on DESKTOP-0BJPABD with PID 20748 (E:\java_exercise\springboot_learning\shizuo\target\classes started by 曾昕阳 in E:\java_exercise\springboot_learning\shizuo)
+2021-05-12 19:34:36.578  INFO 20748 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : No active profile set, falling back to default profiles: default
+2021-05-12 19:34:36.649  INFO 20748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-12 19:34:36.650  INFO 20748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-12 19:34:37.380  INFO 20748 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-12 19:34:37.698  INFO 20748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-12 19:34:37.698  INFO 20748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-12 19:34:37.698  INFO 20748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-12 19:34:37.823  INFO 20748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-12 19:34:37.823  INFO 20748 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2021-05-12 19:34:37.919  INFO 20748 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-05-12 19:34:38.078  INFO 20748 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-05-12 19:34:39.570  INFO 20748 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-12 19:34:39.763  INFO 20748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-12 19:34:39.839  INFO 20748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-12 19:34:39.847  INFO 20748 --- [restartedMain] indi.huishi.shizuo.ShizuoApplication     : Started ShizuoApplication in 3.684 seconds (JVM running for 5.252)
+2021-05-12 19:34:55.779  INFO 20748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-12 19:34:55.779  INFO 20748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-12 19:34:55.780  INFO 20748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-12 19:34:55.796  INFO 20748 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 19:34:55.797  INFO 20748 --- [http-nio-8080-exec-1] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 19:34:56.062  INFO 20748 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 19:34:56.062  INFO 20748 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 19:34:56.062  INFO 20748 --- [http-nio-8080-exec-2] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 19:34:56.062  INFO 20748 --- [http-nio-8080-exec-3] i.h.shizuo.interceptor.LoginInterceptor  : 未登录
+2021-05-12 19:35:00.150  INFO 20748 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 跳转到显示页面
+2021-05-12 19:35:00.151  INFO 20748 --- [http-nio-8080-exec-4] i.h.shizuo.controller.UserController     : 登录成功
+2021-05-12 19:35:00.158  INFO 20748 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/show.action
+2021-05-12 19:35:00.160  INFO 20748 --- [http-nio-8080-exec-10] i.h.shizuo.controller.StudentController  : 主页..查找第1页
+2021-05-12 19:35:00.237  INFO 20748 --- [http-nio-8080-exec-10] i.h.shizuo.controller.StudentController  : url:http://localhost:8080/student/show.action
+2021-05-12 19:35:00.238  INFO 20748 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/show.action
+2021-05-12 19:35:00.275  INFO 20748 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 19:35:00.295  INFO 20748 --- [http-nio-8080-exec-10] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/show.action
+2021-05-12 19:35:00.326  INFO 20748 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 19:35:00.326  INFO 20748 --- [http-nio-8080-exec-6] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 19:35:04.490  INFO 20748 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /student/stat.action
+2021-05-12 19:35:04.498  INFO 20748 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /student/stat.action
+2021-05-12 19:35:04.506  INFO 20748 --- [http-nio-8080-exec-7] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /student/stat.action
+2021-05-12 19:35:04.519  INFO 20748 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 19:35:04.522  INFO 20748 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 19:35:04.522  INFO 20748 --- [http-nio-8080-exec-8] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error
+2021-05-12 19:35:04.545  INFO 20748 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1preHandle: /error
+2021-05-12 19:35:04.547  INFO 20748 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1postHandle: /error
+2021-05-12 19:35:04.547  INFO 20748 --- [http-nio-8080-exec-9] i.h.shizuo.interceptor.LoginInterceptor  : 1afterCompletion: /error

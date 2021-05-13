@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+  <head>
+    <title>Title</title>
+    <base th:href="${#request.getContextPath()}+'/'">
+    <link type="text/css" rel="stylesheet" href="static/css/style.css">
+    <style type="text/css">
+      body {
+        overflow: hidden;
+        background-image: url("static/img/back.png");
+      }
+    </style>
+  </head>
+  <body>
+   <div style="text-align: center;">
+      <h3>您访问的后台出现错误，正在抢修</h3>
+      <h1 th:text="${status}"/>
+      <h1 th:text="${message}"></h1>
+      <a th:href="@{/user/login/}" style="color: red;font-size: large">返回首页</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+spring:
+  datasource:
+    druid:
+      aop-patterns: indi.huishi.admin.*  # 监控包的位置
+      filters: stat, wall  # 开启监控 防火墙
+      filter:
+        stat: # SQL监控
+          slow-sql-millis: 1000 # 慢查询时长
+          log-slow-sql: true    # 慢查询日志
+        wall: # 防火墙
+          enabled: true
+          config:
+            drop-table-allow: false # 不允许删表
+
+      stat-view-servlet: # 监控页面
+        enabled: true
+        login-username: huishi
+        login-password: 123456
+        reset-enable: false
+      web-stat-filter: # 监控web路径
+        enabled: true
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+        url-pattern: /*
+
+  jdbc:
+    template:
+      query-timeout: 3
+
+kaptcha:
+  height: 50
+  width: 200
+  content:
+    length: 4
+    source: abcdefghjklmnopqrstuvwxyz23456789
+    space: 2
+  font:
+    color: black
+    name: Arial
+    size: 40
+  background-color:
+    from: lightGray
+    to: white
+  border:
+    enabled: true
+    color: black
+    thickness: 1
+
+logging:
+  level:
+    indi.huishi.shizuo.controller: info
+    indi.huishi.shizuo.interceptor: info
+    indi.huishi.shizuo.service: warn
+    indi.huishi.shizuo.dao: warn
+  file:
+    name: E:\java_exercise\springboot_learning\shizuo\log\log.log
+
